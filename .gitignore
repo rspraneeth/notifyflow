@@ -1,0 +1,20 @@
+```
+# Maven
+target/
+*.class
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Environment / secrets
+*.env
+application-local.yml
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+Thumbs.db 
