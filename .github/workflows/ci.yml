@@ -1,0 +1,45 @@
+name: NotifyFlow CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Cache Maven dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Build and test payload-producer
+        working-directory: payload-producer
+        run: mvn clean test
+
+      - name: Build and test core-processor
+        working-directory: core-processor
+        run: mvn clean test
+
+      - name: Build and test customer-service
+        working-directory: customer-service
+        run: mvn clean test
+
+      - name: Build and test delivery-service
+        working-directory: delivery-service
+        run: mvn clean test
