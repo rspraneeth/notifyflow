@@ -2,7 +2,7 @@
 
 An enterprise-grade, event-driven customer notification pipeline built with Spring Boot and Apache Kafka. NotifyFlow ingests structured customer communication payloads from upstream systems, validates and enriches them with customer profile data, applies conditional routing logic, and delivers them to the correct notification channel.
 
-This project mirrors real-world production systems used at large enterprises for unified customer communications — built to demonstrate backend engineering patterns including event-driven architecture, payload transformation pipelines, Redis caching, PostgreSQL audit logging, and microservices communication.
+This project mirrors real-world production systems used at large enterprises for customer communications — built to demonstrate backend engineering patterns including event-driven architecture, payload transformation pipelines, Redis caching, PostgreSQL audit logging, and microservices communication.
 
 ---
 
