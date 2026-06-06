@@ -497,4 +497,4 @@ notifyflow/
 
 ## Author
 
-Satya Praneeth Reddi — [GitHub](https://github.com/rspraneeth) · [LinkedIn](https://linkedin.com/in/rspraneeth) · [LeetCode](https://leetcode.com/u/rspraneeth)
+Satya Praneeth Reddi — [GitHub](https://github.com/rspraneeth) · [LinkedIn](https://linkedin.com/in/praneethrsp/) · [LeetCode](https://leetcode.com/u/rspraneeth)
