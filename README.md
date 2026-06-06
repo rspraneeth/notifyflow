@@ -18,7 +18,7 @@ NotifyFlow is fully deployed and running on AWS.
 | customer-service API | http://18.218.204.81:8084/api/customers/CUST-123 |
 | delivery-service health | http://18.218.204.81:8083/actuator/health |
 
-> **Note:** If the pipeline is unresponsive, the Aiven Kafka free tier service may have powered off due to inactivity. Log into aiven.io and resume the `notifyflow-kafka` service first — the entire pipeline depends on Kafka being active.
+> **Note:** The live deployment may be inactive. Aiven Kafka free tier powers off during inactivity and AWS resources expire December 5, 2026. If you want to see the pipeline running live, reach out to me directly and I can bring it back up. To run it yourself, follow the local development setup below — it runs fully on Docker with no cloud accounts needed.
 
 ---
 
