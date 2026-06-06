@@ -20,3 +20,5 @@ application-local.yml
 Thumbs.db 
 
 *.pem
+*.winmd
+*.exe
