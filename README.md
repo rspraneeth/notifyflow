@@ -493,6 +493,12 @@ notifyflow/
 └── .github/workflows/ci.yml    GitHub Actions CI pipeline
 ```
 
+## Lambda DLQ Sweeper
+
+A scheduled AWS Lambda function (`notifyflow-dlq-sweeper`) runs every 10 minutes via CloudWatch EventBridge. It connects to Aiven Kafka, reads any messages from `customer-events-dlq`, logs the failed event details to CloudWatch, and republishes them to `customer-events` for retry.
+
+Built with Python 3.12 + kafka-python library as a Lambda Layer. Zero infrastructure cost — runs within AWS Lambda free tier.
+
 ---
 
 ## Author
