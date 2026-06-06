@@ -14,7 +14,7 @@ public class CustomerService {
         return CustomerProfile.builder()
                 .customerId(customerId)
                 .customerName(generateName(customerId))
-                .email(customerId.toLowerCase() + "@example.com")
+                .email("rspraneeth.rsp@gmail.com")
                 .phone("+1-555-" + customerId.replaceAll("[^0-9]", "0"))
                 .build();
     }
